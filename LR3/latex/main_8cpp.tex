@@ -1,0 +1,203 @@
+\hypertarget{main_8cpp}{}\section{Файл main.\+cpp}
+\label{main_8cpp}\index{main.\+cpp@{main.\+cpp}}
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{main_8cpp_ab672257c386fed02a1519317fce40acc}{sing\+Up}} (login, email, password)
+\begin{DoxyCompactList}\small\item\em Функция регистрации Функция регистрации, позволяющая работнику компании зарегистрироваться в системе \end{DoxyCompactList}\item 
+\mbox{\hyperlink{main_8cpp_a5afd1c5172302617a340ac6e64edbf5f}{sing\+In}} (login, password)
+\begin{DoxyCompactList}\small\item\em Функция входа Функция входа, позволяющая работнику компании войти в систему \end{DoxyCompactList}\item 
+\mbox{\hyperlink{main_8cpp_a91a14d6a6e0662f01083be9f540abe25}{create\+Bid}} (id\+User)
+\begin{DoxyCompactList}\small\item\em Функция создания заявки Функция создания заявки, позволяющая работнику компании создать заявку \end{DoxyCompactList}\item 
+\mbox{\hyperlink{main_8cpp_ab6c57c7cc892f48a5c6de5990f71ade5}{del\+Bid}} (id\+User)
+\begin{DoxyCompactList}\small\item\em Функция удаления заявки Функция удаления заявки, позволяющая работнику компании удалить заявку \end{DoxyCompactList}\item 
+\mbox{\hyperlink{main_8cpp_a026b7f3a4892b2603bb3520e76931ea9}{convey\+Bid}} (login\+From, login\+To, id\+Bid)
+\begin{DoxyCompactList}\small\item\em Функция передачи заявки Функция передачи заявки, позволяющая работнику компании передать заявку \end{DoxyCompactList}\item 
+\mbox{\hyperlink{main_8cpp_a8d4495723ab1d4b108d9e0348f5233e4}{edit\+Bid}} (id\+Bid, id\+User)
+\begin{DoxyCompactList}\small\item\em Функция редактироания заявки Функция редактирвоания заявки, позволяющая работнику компании редактировать заявку \end{DoxyCompactList}\item 
+\mbox{\hyperlink{main_8cpp_a76ce0fffca7df9041d094bc01d3e90b1}{save\+Changes}} (id\+Bid, id\+User)
+\begin{DoxyCompactList}\small\item\em Функция сохранения заявки Функция сохранения заявки, позволяющая работнику компании сохранить заявку \end{DoxyCompactList}\item 
+\mbox{\hyperlink{main_8cpp_a4d04f40a35139f10b517ad445624676c}{sign\+Out}} (id\+User)
+\begin{DoxyCompactList}\small\item\em Функция выхода Функция выхода, позволяющая пользователю выйти из системы \end{DoxyCompactList}\item 
+\mbox{\hyperlink{main_8cpp_a58586bff548c8ceb5ca5444ba163eafd}{close\+Bid}} (id\+User, id\+Client)
+\begin{DoxyCompactList}\small\item\em Функция закрытия заявки Функция закрытия заявки, позволяющая работнику компании закрыть заявку \end{DoxyCompactList}\item 
+\mbox{\hyperlink{main_8cpp_afd6894a01af752d5d0aa269588257b42}{check\+Role}} (id\+User)
+\begin{DoxyCompactList}\small\item\em Функция проверки роли Функция проверки роли, позволяющая проверить роль пользователя \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Функции}
+\mbox{\Hypertarget{main_8cpp_afd6894a01af752d5d0aa269588257b42}\label{main_8cpp_afd6894a01af752d5d0aa269588257b42}} 
+\index{main.\+cpp@{main.\+cpp}!check\+Role@{check\+Role}}
+\index{check\+Role@{check\+Role}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{check\+Role()}{checkRole()}}
+{\footnotesize\ttfamily check\+Role (\begin{DoxyParamCaption}\item[{id\+User}]{ }\end{DoxyParamCaption})}
+
+
+
+Функция проверки роли Функция проверки роли, позволяющая проверить роль пользователя 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em id\+User} & Id пользователя \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_a58586bff548c8ceb5ca5444ba163eafd}\label{main_8cpp_a58586bff548c8ceb5ca5444ba163eafd}} 
+\index{main.\+cpp@{main.\+cpp}!close\+Bid@{close\+Bid}}
+\index{close\+Bid@{close\+Bid}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{close\+Bid()}{closeBid()}}
+{\footnotesize\ttfamily close\+Bid (\begin{DoxyParamCaption}\item[{id\+User}]{,  }\item[{id\+Client}]{ }\end{DoxyParamCaption})}
+
+
+
+Функция закрытия заявки Функция закрытия заявки, позволяющая работнику компании закрыть заявку 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em id\+User} & Id пользователя \\
+\hline
+\mbox{\tt in}  & {\em id\+Client} & Id клиента \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_a026b7f3a4892b2603bb3520e76931ea9}\label{main_8cpp_a026b7f3a4892b2603bb3520e76931ea9}} 
+\index{main.\+cpp@{main.\+cpp}!convey\+Bid@{convey\+Bid}}
+\index{convey\+Bid@{convey\+Bid}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{convey\+Bid()}{conveyBid()}}
+{\footnotesize\ttfamily convey\+Bid (\begin{DoxyParamCaption}\item[{login\+From}]{,  }\item[{login\+To}]{,  }\item[{id\+Bid}]{ }\end{DoxyParamCaption})}
+
+
+
+Функция передачи заявки Функция передачи заявки, позволяющая работнику компании передать заявку 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em login\+From} & Логин пользователя от которого передается заявка \\
+\hline
+\mbox{\tt in}  & {\em login\+To} & Логин пользователя которому передается заявка \\
+\hline
+\mbox{\tt in}  & {\em id\+Bid} & Id заявки \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_a91a14d6a6e0662f01083be9f540abe25}\label{main_8cpp_a91a14d6a6e0662f01083be9f540abe25}} 
+\index{main.\+cpp@{main.\+cpp}!create\+Bid@{create\+Bid}}
+\index{create\+Bid@{create\+Bid}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{create\+Bid()}{createBid()}}
+{\footnotesize\ttfamily create\+Bid (\begin{DoxyParamCaption}\item[{id\+User}]{ }\end{DoxyParamCaption})}
+
+
+
+Функция создания заявки Функция создания заявки, позволяющая работнику компании создать заявку 
+
+\begin{DoxyWarning}{Предупреждения}
+Может создать только авторизированный пользователь 
+\end{DoxyWarning}
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em id\+User} & Id пользователя \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_ab6c57c7cc892f48a5c6de5990f71ade5}\label{main_8cpp_ab6c57c7cc892f48a5c6de5990f71ade5}} 
+\index{main.\+cpp@{main.\+cpp}!del\+Bid@{del\+Bid}}
+\index{del\+Bid@{del\+Bid}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{del\+Bid()}{delBid()}}
+{\footnotesize\ttfamily del\+Bid (\begin{DoxyParamCaption}\item[{id\+User}]{ }\end{DoxyParamCaption})}
+
+
+
+Функция удаления заявки Функция удаления заявки, позволяющая работнику компании удалить заявку 
+
+\begin{DoxyWarning}{Предупреждения}
+Может удалить только пользователь соответвующей роли 
+\end{DoxyWarning}
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em id\+User} & Id пользователя \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_a8d4495723ab1d4b108d9e0348f5233e4}\label{main_8cpp_a8d4495723ab1d4b108d9e0348f5233e4}} 
+\index{main.\+cpp@{main.\+cpp}!edit\+Bid@{edit\+Bid}}
+\index{edit\+Bid@{edit\+Bid}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{edit\+Bid()}{editBid()}}
+{\footnotesize\ttfamily edit\+Bid (\begin{DoxyParamCaption}\item[{id\+Bid}]{,  }\item[{id\+User}]{ }\end{DoxyParamCaption})}
+
+
+
+Функция редактироания заявки Функция редактирвоания заявки, позволяющая работнику компании редактировать заявку 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em id\+Bid} & Id заявки \\
+\hline
+\mbox{\tt in}  & {\em id\+User} & Id пользователя \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_a76ce0fffca7df9041d094bc01d3e90b1}\label{main_8cpp_a76ce0fffca7df9041d094bc01d3e90b1}} 
+\index{main.\+cpp@{main.\+cpp}!save\+Changes@{save\+Changes}}
+\index{save\+Changes@{save\+Changes}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{save\+Changes()}{saveChanges()}}
+{\footnotesize\ttfamily save\+Changes (\begin{DoxyParamCaption}\item[{id\+Bid}]{,  }\item[{id\+User}]{ }\end{DoxyParamCaption})}
+
+
+
+Функция сохранения заявки Функция сохранения заявки, позволяющая работнику компании сохранить заявку 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em id\+Bid} & Id заявки \\
+\hline
+\mbox{\tt in}  & {\em id\+User} & Id пользователя \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_a4d04f40a35139f10b517ad445624676c}\label{main_8cpp_a4d04f40a35139f10b517ad445624676c}} 
+\index{main.\+cpp@{main.\+cpp}!sign\+Out@{sign\+Out}}
+\index{sign\+Out@{sign\+Out}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{sign\+Out()}{signOut()}}
+{\footnotesize\ttfamily sign\+Out (\begin{DoxyParamCaption}\item[{id\+User}]{ }\end{DoxyParamCaption})}
+
+
+
+Функция выхода Функция выхода, позволяющая пользователю выйти из системы 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em id\+User} & Id пользователя \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_a5afd1c5172302617a340ac6e64edbf5f}\label{main_8cpp_a5afd1c5172302617a340ac6e64edbf5f}} 
+\index{main.\+cpp@{main.\+cpp}!sing\+In@{sing\+In}}
+\index{sing\+In@{sing\+In}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{sing\+In()}{singIn()}}
+{\footnotesize\ttfamily sing\+In (\begin{DoxyParamCaption}\item[{login}]{,  }\item[{password}]{ }\end{DoxyParamCaption})}
+
+
+
+Функция входа Функция входа, позволяющая работнику компании войти в систему 
+
+\begin{DoxyWarning}{Предупреждения}
+Может войти только зарегистрированный пользователь 
+\end{DoxyWarning}
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em login} & Логин пользователя \\
+\hline
+\mbox{\tt in}  & {\em password} & Пароль пользователя \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_ab672257c386fed02a1519317fce40acc}\label{main_8cpp_ab672257c386fed02a1519317fce40acc}} 
+\index{main.\+cpp@{main.\+cpp}!sing\+Up@{sing\+Up}}
+\index{sing\+Up@{sing\+Up}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{sing\+Up()}{singUp()}}
+{\footnotesize\ttfamily sing\+Up (\begin{DoxyParamCaption}\item[{login}]{,  }\item[{email}]{,  }\item[{password}]{ }\end{DoxyParamCaption})}
+
+
+
+Функция регистрации Функция регистрации, позволяющая работнику компании зарегистрироваться в системе 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em login} & Логин пользователя \\
+\hline
+\mbox{\tt in}  & {\em email} & E-\/mail пользователя \\
+\hline
+\mbox{\tt in}  & {\em password} & Пароль пользователя \\
+\hline
+\end{DoxyParams}
